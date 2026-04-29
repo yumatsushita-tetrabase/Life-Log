@@ -44,17 +44,17 @@ export default async function BlogPostPage({ params }: Props) {
     <div>
       <Link
         href="/"
-        className="inline-block text-xs text-zinc-700 hover:text-zinc-400 transition-colors mb-12 tracking-wider"
+        className="inline-block text-xs text-stone-400 hover:text-stone-700 transition-colors mb-12 tracking-wider"
       >
         ← 戻る
       </Link>
 
       <article>
         <header className="mb-10">
-          <time className="text-[10px] text-zinc-700 tracking-widest block mb-4">
+          <time className="text-[10px] text-stone-300 tracking-widest block mb-4">
             {formatDate(post.date)}
           </time>
-          <h1 className="text-xl font-light text-zinc-200 leading-relaxed mb-5">
+          <h1 className="text-xl font-light text-stone-800 leading-relaxed mb-5">
             {post.title}
           </h1>
           {post.tags && post.tags.length > 0 && (
@@ -62,14 +62,14 @@ export default async function BlogPostPage({ params }: Props) {
               {post.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="text-[10px] text-zinc-600 border border-zinc-800 px-2 py-0.5 rounded-full"
+                  className="text-[10px] text-stone-400 border border-stone-200 px-2 py-0.5 rounded-full"
                 >
                   {tag}
                 </span>
               ))}
             </div>
           )}
-          <div className="mt-8 border-t border-zinc-900" />
+          <div className="mt-8 border-t border-stone-100" />
         </header>
 
         <div
