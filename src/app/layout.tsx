@@ -19,15 +19,15 @@ export default function RootLayout({
     <html lang="ja">
       <body>
         <div className="min-h-screen flex flex-col">
-          <header className="border-b border-zinc-800">
+          <header className="border-b border-stone-100">
             <div className="max-w-xl mx-auto px-6 py-6 flex items-center justify-between">
               <Link
                 href="/"
-                className="text-sm tracking-widest text-zinc-500 hover:text-zinc-200 transition-colors uppercase"
+                className="text-sm tracking-widest text-stone-400 hover:text-stone-800 transition-colors uppercase"
               >
                 Life Log
               </Link>
-              <span className="text-xs text-zinc-700">曖昧なものを、言葉にする</span>
+              <span className="text-xs text-stone-300">曖昧なものを、言葉にする</span>
             </div>
           </header>
 
@@ -35,8 +35,8 @@ export default function RootLayout({
             {children}
           </main>
 
-          <footer className="border-t border-zinc-800 mt-auto">
-            <div className="max-w-xl mx-auto px-6 py-6 text-center text-xs text-zinc-700">
+          <footer className="border-t border-stone-100 mt-auto">
+            <div className="max-w-xl mx-auto px-6 py-6 text-center text-xs text-stone-300">
               © {new Date().getFullYear()} — 記録は続く
             </div>
           </footer>
