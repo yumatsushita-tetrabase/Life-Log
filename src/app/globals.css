@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-zinc-950 text-zinc-300;
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", Meiryo, sans-serif;
+  }
+}
+
+@layer components {
+  .prose-blog {
+    @apply leading-[1.9] text-zinc-400 text-[0.95rem];
+  }
+
+  .prose-blog h2 {
+    @apply text-base font-medium text-zinc-200 mt-10 mb-3;
+  }
+
+  .prose-blog h3 {
+    @apply text-sm font-medium text-zinc-300 mt-7 mb-2;
+  }
+
+  .prose-blog p {
+    @apply mb-5;
+  }
+
+  .prose-blog ul {
+    @apply list-none mb-5 space-y-2;
+  }
+
+  .prose-blog ul li::before {
+    content: "— ";
+    @apply text-zinc-600;
+  }
+
+  .prose-blog ol {
+    @apply list-decimal list-inside mb-5 space-y-2 text-zinc-500;
+  }
+
+  .prose-blog blockquote {
+    @apply border-l-2 border-zinc-700 pl-5 text-zinc-500 my-6 italic;
+  }
+
+  .prose-blog code {
+    @apply bg-zinc-800 text-zinc-300 px-1.5 py-0.5 rounded text-sm font-mono;
+  }
+
+  .prose-blog pre {
+    @apply bg-zinc-900 text-zinc-300 p-5 rounded-lg overflow-x-auto mb-5 text-sm border border-zinc-800;
+  }
+
+  .prose-blog pre code {
+    @apply bg-transparent p-0;
+  }
+
+  .prose-blog a {
+    @apply text-zinc-400 underline underline-offset-4 decoration-zinc-700 hover:text-zinc-200 hover:decoration-zinc-400 transition-colors;
+  }
+}
