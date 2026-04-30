@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     default: "Life Log",
     template: "%s | Life Log",
   },
-  description: "曖昧なものを、言葉にしようとする試み",
+  description: "日々の記録",
 };
 
 export default function RootLayout({
@@ -27,7 +27,6 @@ export default function RootLayout({
               >
                 Life Log
               </Link>
-              <span className="text-xs text-stone-300">曖昧なものを、言葉にする</span>
             </div>
           </header>
 
